@@ -1,4 +1,6 @@
 #include "main.h"
+#include <unistd.h>
+
 /**
  * rot13 - encodes a string using ROT13 substitution cipher
  * @str: the string to be encoded
@@ -8,31 +10,41 @@
 char *rot13(char *str)
 
 {
-	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char *alpha  = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *rot13  = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i, j;
 
-	for (int i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		char *ptr = input;
-		char *res = output;
 		int found = 0;
 
-		for (; *ptr != '\0'; ptr++, res++)
+		for (j = 0; alpha[j] != '\0'; j++)
 		{
-			if (str[i] == *ptr)
+			if (str[i] == alpha[j])
 			{
-				str[i] = *res;
+				str[i] = rot13[j];
 				found = 1;
 				break;
 			}
 		}
+
+
 		if (!found)
-		{
-			if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z'))
-			{
-				continue;
+			_putchar(str[i]);
+
 			}
-		}
-	}
 	return (str);
+}
+
+/**
+ * _putchar - writes a character to the standard output
+ * @c: the character
+ * Return: on sucess, the number of characters written
+ * On error, -1 is returned, and errno is set appropriately
+ */
+
+int _putchar(char c)
+
+{
+	return (write(1, &c, 1));
 }
