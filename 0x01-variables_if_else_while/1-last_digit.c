@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - entry point of the program
+ *
+ * Return: always 0 on sucess
+ */
+
 int main(void)
 {
 	int n;
