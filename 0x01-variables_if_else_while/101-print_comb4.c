@@ -16,6 +16,11 @@ int main(void)
 	return (0);
 }
 
+/**
+ * print_combinations - Prints all possible different combinations,
+ * of three digits.
+ */
+
 void print_combinations(void)
 {
 	int i, j, k;
