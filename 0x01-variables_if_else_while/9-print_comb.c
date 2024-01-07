@@ -15,7 +15,7 @@ int main(void)
 		write(1, &i, 1);
 		if (i < 57)
 		{
-			 write(1, ", ", 2);
+			write(1, ", ", 2);
 		}
 	}
 
