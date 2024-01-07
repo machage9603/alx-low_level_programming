@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - entry point
@@ -8,15 +8,17 @@
 
 int main(void)
 {
-	char hex_digits[] = "0123456789abcdef";
-
 	int i;
 
-	for (i = 0; i < 16; i++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(hex_digits[i]);
+		write(1, &i, 1);
 	}
-	putchar('\n');
+	for (i = 97; i < 103; i++)
+	{
+		write(1, &i, 1);
+	}
+	write(1, "\n", 1);
 
 	return (0);
 }
