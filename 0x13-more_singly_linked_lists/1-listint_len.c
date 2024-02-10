@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /*
- * listinr_len - returns the no. of nodes in a linked list
+ * listint_len - returns the number of elements in a linked list
  * @h: head of the list
- * Return: number of nodes
+ * Return: number of element
  */
 
 size_t listint_len(const listint_t *h)
