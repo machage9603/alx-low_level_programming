@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
  * lisint_len - returns the number of elements in a linked list
  * @h: head of the list
  * Return: number of element
