@@ -18,7 +18,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	char *buffer;
+	char buf[1024];
 	ssize_t byte_read, byte_write = 0;
 
 	if (filename == NULL)
@@ -32,7 +32,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 
 	 /*read text file*/
-	byte_read = read(fd, buffer, letters);
+	byte_read = read(fd, buf, letters);
 
 	if (byte_read == -1) /*check there was error reading*/
 	{
@@ -41,7 +41,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	/*write contents to the POSIX standard output*/
-	byte_write = write(STDOUT_FILENO, buffer, byte_read);
+	byte_write = write(STDOUT_FILENO, buf, byte_read);
 	close(fd);
 
 	/*check error*/
@@ -50,9 +50,4 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	/*return no. of bytes*/
 	return (byte_write);
-
 }
-
-
-
-
