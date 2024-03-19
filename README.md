@@ -3,7 +3,7 @@
 ## **Description**
 This repository contains programs written in C.
 
-### **Table of Contents**
+## **Table of Contents**
  * [0x00-hello_world](https://github.com/machage9603/alx-low_level_programming/tree/master/0x00-hello_world)
  * [0x01-variables_if_else_while](https://github.com/machage9603/alx-low_level_programming/tree/master/0x01-variables_if_else_while)
  * [0x02-functions_nested_loops](https://github.com/machage9603/alx-low_level_programming/tree/master/0x02-functions_nested_loops)
@@ -28,5 +28,45 @@ This repository contains programs written in C.
  * [0x15-file_io](https://github.com/machage9603/alx-low_level_programming/tree/master/0x15-file_io)
  * [0x16. C - Simple Shell]
 
+## **Installation**
+When writing or executing these programs and projects, you will need to install a compiler as well as a linter
+ * GCC:[Compiler](https://gcc.gnu.org/)
+ * Betty:[C Code Style Checker](https://github.com/holbertonschool/Betty.git)
 
- 
+## **Usage**
+To access any task, program or project. Follow this steps:
+
+ * Clone repository to your terminal
+
+        - git clone https://github.com/dennisnderitu254/alx-low_level_programming
+        - cd alx-low_level_programming
+
+* Go to your preffered directory e.g hello, world
+
+        - cd [0x00. C - Hello, World](./0x00-hello_world)
+
+* Compile your files
+
+        - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c 4-puts
+        - ./4-puts
+
+Enjoy the content.
+
+## Author(s)
+
+* [Mike Machage](https://twitter.com/machage_)
+
+## Acknowledgements
+
+These projects were majorly successful because of my technical mentors as well as my learning peers who are too many to mention.
+
+Disclaimer: the work included in this projects were completed as part of the curriculum for the ALX Africa Software Engineering program, which is based on the projects and materials provided by Holberton School.
+
+## Credits
+
+* [ALX](https://www.alxafrica.com/)
+* [Holberton School](https://www.holbertonschool.com/)
+
+## Contact
+
+* mikemachage@gmail.com 
