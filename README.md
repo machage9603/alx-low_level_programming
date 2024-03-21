@@ -34,14 +34,14 @@ When writing or executing these programs and projects, you will need to install 
  * Betty:[C Code Style Checker](https://github.com/holbertonschool/Betty.git)
 
 ## **Usage**
-To access any task, program or project. Follow this steps:
+To access any task, program, or project. Follow these steps:
 
  * Clone repository to your terminal
 
-        - git clone https://github.com/dennisnderitu254/alx-low_level_programming
+        - git clone https://github.com/yourusername/alx-low_level_programming
         - cd alx-low_level_programming
 
-* Go to your preffered directory e.g hello, world
+* Go to your preferred directory e.g hello, world
 
         - cd [0x00. C - Hello, World](./0x00-hello_world)
 
@@ -50,7 +50,7 @@ To access any task, program or project. Follow this steps:
         - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c 4-puts
         - ./4-puts
 
-Enjoy the content.
+I hope you enjoy the content.
 
 ## Author(s)
 
@@ -58,9 +58,9 @@ Enjoy the content.
 
 ## Acknowledgements
 
-These projects were majorly successful because of my technical mentors as well as my learning peers who are too many to mention.
+These projects were majorly successful because of my technical mentors and my learning peers who are too many to mention.
 
-Disclaimer: the work included in this projects were completed as part of the curriculum for the ALX Africa Software Engineering program, which is based on the projects and materials provided by Holberton School.
+Disclaimer: the work included in this project was completed as part of the curriculum for the ALX Africa Software Engineering program, which is based on the projects and materials provided by Holberton School.
 
 ## Credits
 
